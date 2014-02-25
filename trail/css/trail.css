@@ -1,0 +1,3 @@
+* {margin:0;padding:0;cursor: url('../cat.png') 40 40, pointer;}
+canvas {display:block;}
+html, body {width:100%;height:100%;}
