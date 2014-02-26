@@ -3,5 +3,4 @@ javascript-projects
 
 Misc projects I've made playing around in Javascript
 
-Trail:
-Live preview: http://www.eddiehoyle.co.nz
+Trail: http://www.eddiehoyle.co.nz/projects/trail/
