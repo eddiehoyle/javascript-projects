@@ -1,0 +1,157 @@
+/* ========================================== */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,time,mark,audio,video { margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent; } 
+body { line-height:1; }
+ol,ul { list-style:none; }
+blockquote,q { quotes:none; }
+blockquote:before,blockquote:after,q:before,q:after { content:'';content:none; }
+ins { text-decoration:none; }
+del { text-decoration:line-through; }
+table { border-collapse:collapse;border-spacing:0; }
+/* ========================================== */
+
+body {
+	width: 100%;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+.container {
+	max-width: 960px;
+	margin: 50px auto;
+	padding: 0 5%;
+}
+form {
+	padding: 20px 0;
+	text-align: center;
+}
+.num {
+	width: 25%;
+	height: 60px;
+	font-size: 2em;
+	min-width: 100px;
+	margin: 10px;
+	padding: 10px;
+	background: #eee;
+	border: 1px solid #ccc;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.check{
+	height: 60px;
+	width: 60px;
+	font-size: 1.4em;
+}
+button {
+	height: 60px;
+	width: 250px;
+}
+#compute {
+	padding: 20px 0;
+}
+#output{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#intro {
+	text-align: center;
+}
+#intro h1 {
+	font-size: 2em;
+	padding-bottom: 10px;
+}
+
+li:nth-child(odd) {
+	background-color: #eee
+}
+li:nth-child(even) {
+	background-color: #f9f9f9
+}
+li {
+	text-align: left;
+	word-wrap: break-word;
+	overflow: hidden;
+	padding: 10px;
+}
+
+.range {
+	font-weight: 900;
+	color: #333;
+	float: left;
+	width: 100px;
+}
+
+.items {
+	color: #666;
+	margin-left: 100px;
+}
+
+button {
+	cursor: pointer;
+	font-size: 1.4em;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding;
+	-o-background-clip: padding-box;
+	-ms-background-clip: padding-box;
+	-khtml-background-clip: padding-box;
+	background-clip: padding-box;
+	border-width: 1px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-o-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	border-radius: 6px;
+	border-style: solid;
+	color: white;
+	display: block;
+	margin: 0.2em auto;
+	padding: 12px 15px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #63bb4a;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #83c96f), color-stop(50%, #63bb4a), color-stop(100%, #4e9939));
+	background-image: -moz-linear-gradient(top, #83c96f 0%, #63bb4a 50%, #4e9939 100%);
+	background-image: linear-gradient(top, #83c96f 0%, #63bb4a 50%, #4e9939 100%);
+	border-color: #3b742b;
+	border-left-color: #63bb4a;
+	border-top-color: #63bb4a;
+	-moz-box-shadow: rgba(233, 233, 233, 0.5) 1px 1px 0 0 inset;
+	-webkit-box-shadow: rgba(233, 233, 233, 0.5) 1px 1px 0 0 inset;
+	-o-box-shadow: rgba(233, 233, 233, 0.5) 1px 1px 0 0 inset;
+	box-shadow: rgba(233, 233, 233, 0.5) 1px 1px 0 0 inset;
+	color: white;
+	text-shadow: #458632 0 1px 2px;
+}
+
+button:hover, button:focus {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #93d082), color-stop(50%, #73c25d), color-stop(100%, #4e9939));
+	background-image: -moz-linear-gradient(top, #93d082 0%, #73c25d 50%, #4e9939 100%);
+	background-image: linear-gradient(top, #93d082 0%, #73c25d 50%, #4e9939 100%);
+}
+/* line 50, _multi-line-button.sass */
+button:active {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #5f9f4c), color-stop(100%, #6aaf56));
+	background-image: -moz-linear-gradient(top, #5f9f4c 0%, #6aaf56 100%);
+	background-image: linear-gradient(top, #5f9f4c 0%, #6aaf56 100%);
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+	border-color: #3b742b;
+}
+
+input:focus,
+button:focus {outline:0;}
+
+@media only screen and (max-width: 400px){
+	#intro h1 {
+		font-size: 1.8em;
+	}
+
+	.num {
+		font-size: 1.5em;
+		padding: 5px;
+	}
+
+}

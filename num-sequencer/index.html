@@ -1,0 +1,47 @@
+	<!DOCTYPE html>
+	<html ng-app="numApp">
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+			<meta name="viewport" content="initial-scale=1.0, width=device-width">
+			<script>
+				//document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+			</script>
+			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.js"></script>
+			<script src="logic.js"></script>
+			<script src="app.js"></script>
+			<link rel="stylesheet" href="style.css">
+
+			<title>Eddie Hoyle - num Repeater</title>
+		</head>
+		<body ng-controller="NumController">
+			<div class="container">
+				<div id="intro">
+					<h1>Repeating number sequencer</h1>
+					<p>Find the longest sequence of repeating or non-repeating digits in a given range of numbers.</p>
+				</div>
+				<form ng-enter="compute()">
+					<input class="num" ng-model="numStart" ng-blur="updateNumEnd()" type="number">
+					<input class="num" ng-model="numEnd" ng-blur="updateNumStart()" type="number">
+					
+					<div id="compute">
+						<input ng-model="numRepeat" type="checkbox"> Repeating digits <br>
+						
+					</div>
+					<button ng-click="compute()">Math!</button>
+				</form>
+
+				<p id="output" ng-bind="outputMessage" ng-model="numOutput"></p>
+				<ul>
+					<li ng-repeat="(key, value) in numData">
+						<div class="range">
+							<span ng-bind="numData[key].range.join(' - ')"></span>
+						</div>
+						<div class="items">
+							<span ng-bind="numData[key].items.join(', ')"></span>
+						</div>
+					</li>
+				</ul>
+
+			</div>
+		</body>
+	</html>
